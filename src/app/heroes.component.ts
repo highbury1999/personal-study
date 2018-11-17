@@ -25,6 +25,8 @@ export class HeroesComponent implements OnInit {
         .then(heroes => this.heroes = heroes);
   }
 
+  message = "hello word";
+  information = " this is the information ";
   add(name: string): void {
     name = name.trim();
     if (!name) { return; }

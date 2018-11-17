@@ -20,4 +20,5 @@
   </h2>
   <button (click)="gotoDetail()">View Details</button>
 </div>
-<hero-detail></hero-detail>
+<button (click)='time.click()'>button to call child func</button>
+<hero-detail [message] ="message" [information]="information" #time></hero-detail>
