@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 // Imports for loading & configuring the in-memory web api
 
 import { AppComponent }         from './app.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import {ItemService} from './services/item/item.service';
 
 @NgModule({
   imports: [
@@ -17,9 +19,10 @@ import { AppComponent }         from './app.component';
     AppRoutingModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
-  providers: [  ],
+  providers: [  ItemService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
