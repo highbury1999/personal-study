@@ -16,6 +16,9 @@ export class DashboardComponent implements OnInit {
       this.item=item;
       console.log(this.item);
       
+    },error=>{
+      console.log(error);
+      
     });
   }
 
