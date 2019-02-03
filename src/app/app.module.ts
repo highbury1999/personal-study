@@ -6,11 +6,12 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
-// Imports for loading & configuring the in-memory web api
-
 import { AppComponent }         from './app.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import {ItemService} from './services/item/item.service';
+import {BannerService} from './services/banner/banner.service';
+import { HeaderComponent } from './component/community/header/header.component';
+
 
 @NgModule({
   imports: [
@@ -22,9 +23,10 @@ import {ItemService} from './services/item/item.service';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent
   ],
-  providers: [  ItemService],
+  providers: [  ItemService, BannerService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
