@@ -8,6 +8,8 @@ import {BannerService} from '../../../services/banner/banner.service';
 })
 export class HeaderComponent implements OnInit {
   banners:object;
+  search = 'this is a search';
+  
 
   constructor(private bannerService:BannerService) { }
 
@@ -17,6 +19,7 @@ export class HeaderComponent implements OnInit {
       console.log(this.banners);
       
     })
+
   }
 
 }
