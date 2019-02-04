@@ -10,7 +10,6 @@ export class BannerService {
   showmineUrl:string = 'https://api.showmine.com.au/';
 
   getBanner():Observable<Object> {
-    let options = { };
     return this.http.get<Object>(this.showmineUrl + 'banner');
   }
 
